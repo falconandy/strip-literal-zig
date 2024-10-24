@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strip Literal - Demo</title>
+    <link href="index.css" rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <textarea id="source" class="code" placeholder="source code"></textarea>
+        </div>
+        <div class="middle">
+            <table>
+                <tr>
+                    <td>Language</td>
+                    <td>
+                        <select id="language">
+                            <option value="11">C</option>
+                            <option value="10">C++</option>
+                            <option value="7">C#</option>
+                            <option value="9">CSS (comments)</option>
+                            <option value="1" selected>Go</option>
+                            <option value="8">HTML (comments)</option>
+                            <option value="2">JavaScript</option>
+                            <option value="4">Java</option>
+                            <option value="5">Kotlin</option>
+                            <option value="6">Python</option>
+                            <option value="12">Swift</option>
+                            <option value="3">TypeScript</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Comments</td>
+                    <td>
+                        <select id="comments">
+                            <option value="0">-</option>
+                            <option value="1" selected>Remove</option>
+                            <option value="2">ByteToSpace</option>
+                            <option value="3">RuneToSpace</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Strings</td>
+                    <td>
+                        <select id="strings">
+                            <option value="0">-</option>
+                            <option value="1" selected>Remove</option>
+                            <option value="2">ByteToSpace</option>
+                            <option value="3">RuneToSpace</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <button id="strip" class="strip">&gt;&gt; Strip &gt;&gt;</button>
+        </div>
+        <div class="right">
+            <textarea id="result" class="code" placeholder="result" readonly></textarea>
+        </div>
+    </div>
+</body>
+</html>
